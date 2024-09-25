@@ -15,6 +15,107 @@
     <title>Frontend Mentor | Fylo data storage component</title>
   </head>
   <body>
-    You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB
+    <div class="grid min-h-dvh place-items-center bg-very-dark-blue">
+      <!-- background -->
+      <div class="absolute left-0 w-full lg:bottom-0">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="./images/bg-desktop.png"
+          />
+          <img
+            src="./images/bg-mobile.png"
+            alt="background"
+            class="w-full object-cover"
+          />
+        </picture>
+      </div>
+      <!-- background -->
+
+      <!-- main content -->
+      <div
+        class="relative flex max-w-[920px] flex-col gap-4 lg:flex-row lg:gap-[30px]"
+      >
+        <!-- left box -->
+        <div
+          class="shadow-box rounded-[10px] rounded-tr-[100px] bg-dark-blue py-10 pl-[41px] lg:min-w-[350px]"
+        >
+          <img src="./images/logo.svg" alt="logo" />
+
+          <div class="mt-[33px] flex h-12 gap-4">
+            <div
+              class="flex w-14 items-center justify-center rounded-[10px] bg-very-dark-blue p-4"
+            >
+              <img src="./images/icon-document.svg" alt="icon document" />
+            </div>
+            <div
+              class="flex w-14 items-center justify-center rounded-[10px] bg-very-dark-blue p-4"
+            >
+              <img src="./images/icon-folder.svg" alt="icon folder" />
+            </div>
+            <div
+              class="flex w-14 items-center justify-center rounded-[10px] bg-very-dark-blue p-4"
+            >
+              <img src="./images/icon-upload.svg" alt="icon upload" />
+            </div>
+          </div>
+        </div>
+        <!-- left box -->
+
+        <!-- right box -->
+        <div
+          class="shadow-box relative min-w-[326px] rounded-[10px] bg-dark-blue px-8 py-[52px] pt-8 text-pale-blue lg:max-h-[154px] lg:min-w-[540px] lg:self-end lg:px-10 lg:py-10"
+        >
+          <!-- remaining storage box -->
+          <div
+            class="absolute -bottom-9 left-1/2 w-[179px] -translate-x-1/2 rounded-[10px] bg-white px-6 py-4 lg:bottom-[129px] lg:left-[321px] lg:translate-x-0"
+          >
+            <div
+              class="flex items-center justify-center gap-[9px] text-very-dark-blue"
+            >
+              <p class="text-[40px] font-bold leading-10">185</p>
+              <p
+                class="text-xs font-bold leading-none tracking-[1px] opacity-50"
+              >
+                GB LEFT
+              </p>
+            </div>
+          </div>
+          <div
+            class="absolute right-10 top-3 hidden border-l-[28px] border-t-[28px] border-l-transparent border-t-white lg:block"
+          ></div>
+          <!-- remaining storage box -->
+
+          <p class="mb-4 text-center text-sm leading-none lg:text-left">
+            You’ve used <span class="font-bold">815 GB</span> of your storage
+          </p>
+          <!-- progress bar -->
+          <div
+            class="relative mb-[10px] h-5 w-full rounded-[10px] bg-very-dark-blue lg:mb-2"
+          >
+            <!-- completed progress -->
+            <div
+              class="absolute left-[3px] top-1/2 h-[14px] w-[81.5%] -translate-y-1/2 rounded-[10px] bg-gradient-progress"
+            >
+              <!-- dot -->
+              <div
+                class="absolute right-[3px] top-1/2 size-[10px] -translate-y-1/2 rounded-full bg-white"
+              ></div>
+              <!-- dot -->
+            </div>
+            <!-- completed progress -->
+          </div>
+          <!-- progress bar -->
+          <div
+            class="flex items-center justify-between text-xs font-bold leading-none"
+          >
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
+        </div>
+        <!-- right box -->
+      </div>
+      <!-- main content -->
+    </div>
   </body>
 </html>
