@@ -8,8 +8,8 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/NDK1195/huddle-landing-page-with-single-introductory-section)
-- Live Site URL: [Live site URL here](https://ndk1195.github.io/huddle-landing-page-with-single-introductory-section/)
+- Solution URL: [Solution URL here](https://github.com/NDK1195/fylo-data-storage-component)
+- Live Site URL: [Live site URL here](https://ndk1195.github.io/fylo-data-storage-component/)
 
 ### Built with
 
